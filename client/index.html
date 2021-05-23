@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborator WEB</title>
+    <link rel="stylesheet" href="/client/css/main.css">
+</head>
+<body>
+    <div class="window">
+        <h1>Rezolvăm ecuații de gradul 2 :)</h1>
+        <h2>Ce dorești să calculezi?</h2>
+        <div class="app">
+            <form action="">
+                <div class="eq">
+                    <input type="text" name="a" id="a">
+                    <div class="text">x<sup>2</sup> + </div>
+                    <input type="text" name="b" id="b">
+                    <div class="text">x + </div>
+                    <input type="text" name="c" id="c">
+                    <div class="text"> = 0 </div>
+                </div>
+                <button>Calculează!</button>
+            </form>
+        </div>
+        <div class="example">
+            <h4>Example</h4>
+            x<sup>2</sup> + 2x + 4 = 0  
+        </div>
+        <div class="results">
+            <h4>Răspuns</h4>
+            <div class="row">
+                Δ = <span id="delta"></span>
+            </div>
+            <div class="row">
+                x<sub>1</sub> = <span id="x1"></span>
+            </div>
+            <div class="row">
+                x<sub>2</sub> = <span id="x2"></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/client/js/main.js"></script>
+</body>
+</html>

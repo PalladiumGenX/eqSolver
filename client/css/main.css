@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #444;
+    outline: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgray;
+}
+
+.window{
+    position: absolute;
+    padding: 3rem;
+    border-radius: 20px;
+    min-width: 679px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: wheat;
+}
+
+h1{
+    font-size: 39px;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.app form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app form .eq{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.app form .eq .text{
+    font-size: 30px;
+    line-height: 40px;
+    height: 40px;
+    display: flex;
+    margin: 0 8px 0 0;
+}
+
+.app form .eq .text:last-of-type{
+    margin: 0 8px;
+}
+
+.text sup {
+    line-height: 20px;
+}
+
+.app form .eq input {
+    border: 1px solid;
+    width: 80px;
+    height: 42px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.app form .eq input:last-of-type{
+    text-align: center;
+}
+
+form button{
+    padding: 10px;
+    border: 0;
+    font-size: 28px;
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: #333;
+    transition: .2s;
+}
+
+form button:hover{
+    color: #333;
+    background-color: grey;
+}
+
+.window .example{
+    font-size: 20px;
+    margin: 20px 0 35px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+.results{
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.results .row,
+.results .row span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.results .row{
+    margin: 4px 16px;
+}
+
+.results .row sub {
+    line-height: 20px;
+}
+
+@media (max-width: 1500px){
+    .window {
+        padding: 2rem;
+    }
+}
