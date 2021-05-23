@@ -96,8 +96,8 @@ func calculateResult(a, b, c int) sqlite.ResultCalc {
 	result.Delta = b*b - 4*a*c
 	result.IsValid = true
 	if result.Delta > 0 {
-		result.X1 = float64(-b) + math.Sqrt(float64(result.Delta))
-		result.X2 = float64(-b) - math.Sqrt(float64(result.Delta))
+		result.X1 = (float64(-b) + math.Sqrt(float64(result.Delta))) / (2 * float64(a))
+		result.X2 = (float64(-b) - math.Sqrt(float64(result.Delta))) / (2 * float64(a))
 	} else if result.Delta == 0 {
 		result.X1 = float64(-b / 2 * a)
 		result.X2 = result.X1
